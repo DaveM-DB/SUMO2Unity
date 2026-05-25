@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -401,4 +400,3 @@ public class MeshTriangulator
         return (aCrossBP >= 0.0f && bCrossCP >= 0.0f && cCrossAP >= 0.0f);
     }
 }
-#endif

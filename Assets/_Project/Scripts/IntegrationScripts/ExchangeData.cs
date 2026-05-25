@@ -87,12 +87,8 @@ public class ExchangeData : MonoBehaviour
                         string sumoDataJson;
                         bool gotMessage = subSocket.TryReceiveFrameString(out sumoDataJson);
 
-                        int messageCount = 0;
-                        float lastLogTime = 0f;
-
                         if (gotMessage)
                         {
-
                             // Enqueue the message to be handled on the main thread
                             _SimulationController.EnqueueOnMainThread(sumoDataJson);
                         }

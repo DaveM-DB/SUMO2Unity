@@ -70,7 +70,7 @@ public class Fps : MonoBehaviour
 
 
         // --- get the SimulationController in the scene ----------------
-        SimulationController sim = FindObjectOfType<SimulationController>();
+        SimulationController sim = FindFirstObjectByType<SimulationController>();
         if (sim == null)
         {
             Debug.LogError("SimulationController not found!");

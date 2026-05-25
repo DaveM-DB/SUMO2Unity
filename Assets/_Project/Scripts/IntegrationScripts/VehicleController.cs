@@ -47,7 +47,7 @@ public class VehicleController : MonoBehaviour
     void Awake()
     {
         // Look for the first SimulationController in the scene
-        SimulationController sim = FindObjectOfType<SimulationController>();
+        SimulationController sim = FindFirstObjectByType<SimulationController>();
 
         if (sim == null)
         {

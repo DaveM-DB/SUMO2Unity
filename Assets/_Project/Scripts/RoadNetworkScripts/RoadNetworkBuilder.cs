@@ -2,13 +2,14 @@
 // RoadNetworkBuilder.cs
 // (Decals clipped by sampling spans outside junction polygons)
 // ==============================
-#if UNITY_EDITOR
 using Assets.Scripts.SUMOImporter.NetFileComponents;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using NetFile;
@@ -685,4 +686,3 @@ public class LaneSegmentDecalController : MonoBehaviour
         }
     }
 }
-#endif

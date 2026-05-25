@@ -18,11 +18,7 @@ public class SimulationController : MonoBehaviour
     private string egoVehicleId = "f_0.0";
     public GameObject egoVehicle;
     private GameObject f_1_0;
-    private Vector3 previousPosition;
-    private Vector3 currentPosition;
     private float long_speed;
-    private float distanceAccumulator = 0f;
-    private float timeAccumulator = 0f;
     private readonly ConcurrentQueue<Action> mainThreadActions = new ConcurrentQueue<Action>();
     public Vector3 egoVehicleInitialPosition = new Vector3(0f, 0f, 0f);
     public Quaternion egoVehicleInitialRotation = Quaternion.Euler(0f, 90f, 0f);
@@ -83,12 +79,6 @@ public class SimulationController : MonoBehaviour
 
     [Header("Add Unity Vehicle Prefab (3DModel) according to Sumo Vehicle Type")]
     public List<CarModel> carModelsList = new List<CarModel>();
-
-    // ── new fields ─────────────────────────────────────────────
-    /// last time we processed a TL message
-    private float _lastTlTime = 0f;
-    /// minimum seconds between TL updates
-    private float tlUpdateInterval = 1f;
 
     /// cache last seen state per junction
     private Dictionary<string, string> _lastTlState = new();

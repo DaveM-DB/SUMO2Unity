@@ -9,8 +9,6 @@ namespace UnityStandardAssets.Bike
         private BikeController m_Bike; // the car controller we want to use
         public GameObject m_Wheel;
 
-        private float currentAngle = 0f; // Starting angle
-
         private void Awake()
         {
             // get the car controller
