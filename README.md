@@ -89,6 +89,17 @@ You can run it without requiring any specific package. You only need SUMO and Un
 - Sumo2Unity do not need any external tools to create road network
 - Sumo2Unity does not contain pedestrians at the moment.
 
+## Apple Silicon macOS
+The bundled `Sumo2UnityTool.exe` is a Windows x86_64 PyInstaller executable. On macOS ARM64, use the native launcher instead:
+
+```bash
+make macos-setup
+make build-macos-arm64
+make run-macos
+```
+
+The launcher is built at `dist/Sumo2UnityTool-macos-arm64`. It requires SUMO on `PATH` or `SUMO_HOME` pointing at the SUMO install root.
+
 ## Additional Help
 - If you need more help or have any questions, feel free to create a new issue at the [Issues](https://github.com/SUMO2Unity/SUMO2Unity/issues) section. 
 
@@ -103,4 +114,3 @@ Mohammadi, A., Cherakkatil, M. S. B., Park, P. Y., Nourinejad, M., & Asgary, A. 
 ## License
 - SUMO2Unity codes are distributed under MIT License.
 - SUMO2Unity assets are distributed under CC-BY License.
-

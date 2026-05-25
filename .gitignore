@@ -61,6 +61,16 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Local macOS launcher build artifacts
+/.venv-macos/
+/.pyinstaller/
+/build/
+/dist/
+*.spec
+__pycache__/
+*.pyc
+tripinfo.xml
+
 # Crashlytics generated file
 crashlytics-build.properties
 

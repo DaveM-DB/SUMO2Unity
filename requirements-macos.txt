@@ -1,0 +1,2 @@
+pyzmq>=26,<28
+pyinstaller>=6,<7

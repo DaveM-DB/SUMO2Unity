@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration>
+  <input>
+    <net-file value="Sumo2Unity.net.xml" />
+    <route-files value="routes.rou.xml" />
+    <!-- <additional-files value="buildings.poly.xml,metrics.add.xml" /> -->
+  </input>
+  <time>
+    <begin value="0" />
+    <end value="86400" />
+  </time>
+  <output>
+    <tripinfo-output value="tripinfo.xml" />
+  </output>
+  <!-- <gui_only>
+    <gui-settings-file value="gui-settings.xml" />
+  </gui_only> -->
+</configuration>
